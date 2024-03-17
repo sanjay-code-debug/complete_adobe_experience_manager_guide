@@ -273,7 +273,13 @@ Platform For Adobe Experience Manager
      |------------ Publish-2        <--------                Webserver(tiny module)                          ---------> serve to end user
 
 
-     
+
+     AEM Sites
+     ----------
+
+	      -  overview of dashboard
+
+       
      
 
      
