@@ -113,10 +113,11 @@ Platform For Adobe Experience Manager
 
                
 ## AEM Basic
+
 <details><summary><b>info</b></summary>
+	
     AEM Roles
     ---------
-          
               - Author/Marketing/Managers/Non-Development Roles
               
               - QA/QE  -- Quality Assurance
@@ -127,16 +128,17 @@ Platform For Adobe Experience Manager
 
 
                    
-  CMS   
-      ----------> AEM installation  --------  AEM Consoles               Development Basics
-      ----------> AEM Environments  --------  AEM Authoring  ----------> Development Setup
-  AEM                                         AEM Concepts               Component
+    CMS   
+       ----------> AEM installation  --------  AEM Consoles               Development Basics
+       ----------> AEM Environments  --------  AEM Authoring  ----------> Development Setup
+    AEM                                        AEM Concepts               Component
           
               
 
     What is CMS
     -----------
-       - A CMS helps to create,manage and modify content on a website without the need for specialized technical knowledge
+    
+         - A CMS helps to create,manage and modify content on a website without the need for specialized technical knowledge
    
      Types of CMS
      ------------
@@ -157,7 +159,9 @@ Platform For Adobe Experience Manager
     |---------- Content Delivery Application
     |
     |---------- Front End / Presentation
+    
  also 
+ 
     CMS
      |
      |-------- Content Management System
