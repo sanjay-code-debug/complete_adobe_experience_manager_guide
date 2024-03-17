@@ -279,6 +279,58 @@ Platform For Adobe Experience Manager
 
 	      -  overview of dashboard
 
+
+
+
+    Page properties and Page operations
+    -----------------------------------
+
+                         - Edit / Preview
+			   |
+                           |------- Layout
+			   |------- Developer
+                           |------- Timewarp
+
+
+
+
+
+     - AEM build on JCR (Java Content Repository) to save the Data (now days we can use the MongoDb)
+
+
+    Editable Templates in AEM  - https://youtu.be/GnTrhSc2Wg0?feature=shared
+    -------------------------
+
+          - Create and Edit Editable Template
+	  - Structure
+          - Initial Content
+	  - Policies
+          - Layout
+
+
+
+       - all the template store under   -- conf  folder 
+       
+	  
+   
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+                    
+
        
      
 
