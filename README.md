@@ -137,8 +137,7 @@ Platform For Adobe Experience Manager
 
     What is CMS
     -----------
-    
-         - A CMS helps to create,manage and modify content on a website without the need for specialized technical knowledge
+            - A CMS helps to create,manage and modify content on a website without the need for specialized technical knowledge
    
      Types of CMS
      ------------
