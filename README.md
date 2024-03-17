@@ -176,12 +176,8 @@ Platform For Adobe Experience Manager
 
      What is AEM
      ------------
-
-   - AEM is a comprehensive content management solution for building websites, mobile apps and forms.
-     AEM makes it easy to manage your marketing  content and assets
-     
-
-   - It is a part of adobe cloud (it is enterprise edition)
+          - AEM is a comprehensive content management solution for building websites, mobile apps and forms. AEM makes it easy to manage your marketing  content and assets
+          - It is a part of adobe cloud (it is enterprise edition)
 
     Types of AEM
     ------------
