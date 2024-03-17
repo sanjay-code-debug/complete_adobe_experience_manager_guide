@@ -285,7 +285,7 @@ Platform For Adobe Experience Manager
     Page properties and Page operations
     -----------------------------------
 
-                         - Edit / Preview
+                          Edit / Preview
 			   |
                            |------- Layout
 			   |------- Developer
@@ -301,18 +301,140 @@ Platform For Adobe Experience Manager
     Editable Templates in AEM  - https://youtu.be/GnTrhSc2Wg0?feature=shared
     -------------------------
 
-          - Create and Edit Editable Template
-	  - Structure
-          - Initial Content
-	  - Policies
-          - Layout
+           - Create and Edit Editable Template
+	   - Structure
+           - Initial Content
+	   - Policies
+           - Layout
 
 
+	
+	       - all the template store under   -- conf  folder 
+	
+	       - when we create any new template that  are in draft mode with yellow header -- so we need to enable
+	
+	       - Template and Pages has static relation i.e -- > what ever added in intial content, template and pages  that will be available for new pages but not available for old pages
+	       
+	       - What ever we add into structure i.e Dynamically binded so (it will append to old or new pages )
+	
+	       - What ever we add into structure section we can not edit, delete on pages
 
-       - all the template store under   -- conf  folder 
-       
-	  
+
+     Template Creation (Pages) 
+     -------------------------
+             |
+	     |---- Structure
+             |---- Initial Content
+	     |---- Layout
+
+      
+       - Structue(available to all pages & not editable , deletable) and Intial Content (not available to older pages)
+
+
+    AEM Component (Save Content to JCR or Anywhere)
+    -----------------------------------------------
+	    - Building block of content creation and content rendering
+            - create, save , access 
+
+            Component
+	    --------- 
+               |
+	       |---------- User Content---------------------- Dialog(UI)  ------------- save the content (content store into repository)
+	       |---------- Access Content ------------------- Sling Model(Backend) 
+	       |---------- Styling -------------------------- clientlibs(create a folder put - font, css, Js and all i.e call - clientlibs)
+	       |---------- Rendering ------------------------ Sightly/HTL ----------- 
+
+
+      Component Cycle
+      ---------------
+                - Node is Create on JCR(data store in key value pair) when we create a component.
+		
+		      Dialog -- Authoring Component   |
+	                          |                   |  --------------- Authoring
+			          |                   |
+	                Save Content in Repository    |
+            -------------------------------------------------------------------------------------------
+	             Sling Model - Access Content for Repository               |                       
+	                            |                                          |
+			            |                                          |
+	              Page Load -- Load clientlibs(CSS/JS)                     |-------------- Rendering
+	                            |                                          |
+			            |                                          |
+	              Slightly Load content from Sling Model in Component      |
+	         (Load Data from   - Sling Model and CSS,JS from clientlibs )  |
+
+
+	       OOTB Component
+	       --------------
+			  - Foundational Components
+	                  - Core Components 	   
+
    
+
+    AEM Content Policies (Ploicies are define in - Structure Mode not in Initial Mode For Template)
+    -----------------------------------------------------------------------------------------------
+                 - Content policies are template-level configurations for the templates and its components. 
+		 - The content policies define the design properties of a component.
+                 - client libary we will be added by page component way
+
+           Content Policies
+	   ----------------
+                   |
+		   |------- Page Level Policy
+                   |------- Component Policy
+
+
+    
+    Lock and Unlock Component Structure in AEM (For Template)
+    ---------------------------------------------------------
+                     - once we lock or unlock we need to correct our strutue bcz it is set to default structure
+
+
+		     
+     What is Clientlibs in AEM - https://youtu.be/bpY3ttLaAi8?feature=shared
+     -------------------------
+	                   -  To render a page properly we need javascript,css and other resources like (Fonts, Icons) in AEM we store these in specific folder called - cq:ClientLibraryFolder (clientlibs)
+	
+	                   -  create node of cq:ClientLibraryFolder type to create clientlibs
+	
+	          Clientlibs Properties
+		   ---------------------
+	                      - allowProxy --------> allow anonymous user in publish instance
+			      - categories
+		              - dependencies ------> load this before your clientlibs load
+		              - embed        ------> 
+	
+	          how to declare files
+		  ---------------------
+	                            #base = css  ---------> folder name
+				     style.css  ----------> file name
+
+
+
+       Style System in AEM
+       -------------------
+             - The Style System allows to define style classes in the content policy of a component and page policy of 
+	       template so that a content author is able to select them when editing the component on a page.
+	
+             - These styles can be alternative visual of a component, making the component more flexible.
+
+             - add Style(CSS classes) to Page Policy and Content policy
+
+
+	         Style System (Template Author & Content Author)
+		 -----------------------------------------------
+	                 |
+			 |---------- Clientlibs(JS,CSS)
+	                 |
+			 |---------- Style Name to Content/Page Policy
+	                 |
+			 |---------- Choose Style While Authoring
+
+    
+       
+      Page Versioning in AEM  - https://youtu.be/OOE4olCjUoI?feature=shared
+      -----------------------	
+      
      
 
 
